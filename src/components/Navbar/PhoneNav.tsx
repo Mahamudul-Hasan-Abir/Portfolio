@@ -4,6 +4,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Home, FileText, Folder, Mail } from "lucide-react";
 import Container from "../Container/Container";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../../../public/abir.png";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
@@ -16,17 +18,23 @@ const MobileNav = () => {
     <Container>
       <nav className="flex items-center justify-between py-5">
         {/* Logo */}
-        <div className="text-xl font-bold">
-          <h1 className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FA5252] to-[#DD2476]">
-            Mahamudul Hasan Abir
-          </h1>
-        </div>
+
+        <Link href={"/"}>
+          <div className="w-20 h-20 aspect-square relative">
+            <Image
+              className="object-contain"
+              fill
+              src={logo}
+              alt="logo"
+            ></Image>
+          </div>
+        </Link>
 
         {/* Sheet Trigger */}
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="p-2 rounded-md bg-gradient-to-r from-[#FA5252] to-[#DD2476]">
-              <Menu className="h-4 w-4 text-white" />
+              <Menu className="h-7 w-7 text-white" />
             </button>
           </SheetTrigger>
 

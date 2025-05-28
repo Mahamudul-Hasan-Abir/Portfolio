@@ -12,11 +12,17 @@ import { RiDownload2Line } from "react-icons/ri";
 const Portfolio = () => {
   return (
     <div>
-      <div className="border rounded-2xl shadow-md mt-40 bg-white relative">
+      <div className="border rounded-2xl shadow-md my-40 bg-white relative">
         <div className="size-60 overflow-hidden absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]">
           <div className="relative">
-            <Image
+            {/* <Image
               src="https://res.cloudinary.com/dnfqhy8di/image/upload/v1736078552/user_profiles/jxqioeeeecumycy7tuwe.jpg"
+              alt="Mahamudul Hasan Abir photo"
+              width={500}
+              height={500}
+            ></Image> */}
+            <Image
+              src="https://res.cloudinary.com/dnfqhy8di/image/upload/v1747265040/your_folder_name/1747265036861-cv%204.jpg.jpg"
               alt="Mahamudul Hasan Abir photo"
               width={500}
               height={500}
@@ -28,18 +34,33 @@ const Portfolio = () => {
         </h1>
         <p className="text-[#7B7B7B] py-5 text-center">Web Developer</p>
         <div className="flex justify-center items-center gap-6">
-          <div className="p-3 bg-[#f3f6f6] flex justify-center items-center  rounded-md   ">
-            <FaFacebookF className="size-4 text-[#1973ea]"></FaFacebookF>
-          </div>
-          <div className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md ">
+          <a
+            href="https://www.facebook.com/mh.abir.94695"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md transition-transform duration-300 hover:scale-110"
+          >
+            <FaFacebookF className="size-4 text-[#1973ea]" />
+          </a>
+          <div className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md transition-transform duration-300 hover:scale-110">
             <FaTwitter className="size-4 text-[#1d9cea]"></FaTwitter>
           </div>
-          <div className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md ">
+          <a
+            href="https://github.com/Mahamudul-Hasan-Abir"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md transition-transform duration-300 hover:scale-110"
+          >
             <TbBrandGithubFilled className="size-4"></TbBrandGithubFilled>
-          </div>
-          <div className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md ">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mahamudul-hasan-abir-4936901b3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-[#f3f6f6] flex justify-center items-center rounded-md transition-transform duration-300 hover:scale-110"
+          >
             <FaLinkedinIn className="size-4 text-[#0172b1]"></FaLinkedinIn>
-          </div>
+          </a>
         </div>
         <div className="bg-[#f3f6f6] p-5 m-5 rounded-2xl">
           <div className="flex gap-3">
@@ -102,10 +123,14 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-semibold px-8 py-3 flex justify-center items-center text-white gap-2 rounded-4xl text-lg mb-5">
-            <RiDownload2Line className="size-6"></RiDownload2Line>
+          <a
+            href="/Mahamudul-Hasan-Abir-Resume.pdf"
+            download
+            className="bg-gradient-to-r from-[#FA5252] to-[#DD2476] font-semibold px-8 py-3 flex justify-center items-center text-white gap-2 rounded-4xl text-lg mb-5"
+          >
+            <RiDownload2Line className="size-6" />
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Resume = () => {
       id: 1,
       year: "2016",
       degree: "Secondary School Certificate",
-      institution: "Madartake Abdil Aziz School,Dhaka",
+      institution: "Madartek Abdul Aziz High School & College,Dhaka",
       bg: "bg-blue-50",
     },
     {
@@ -71,8 +71,8 @@ const Resume = () => {
       {/* Skills Header */}
       <div className=" bg-gray-50">
         <div className="p-0 md:p-12">
-          <h2 className="text-2xl font-bold mb-6">Knowledges</h2>
-          <div className="flex flex-wrap gap-3">
+          <h2 className="text-2xl font-bold my-6 ">Knowledges</h2>
+          <div className="flex flex-wrap gap-3 p-5">
             {knowledges.map((knowledge, index) => (
               <div
                 key={index}

@@ -86,13 +86,29 @@ export default function Home() {
       </div>
 
       <p className="mb-5 mt-10 text-[#47596e] font-semibold">
-        Im Creative Director and UI/UX Designer from Sydney, Australia, working
-        in web development and print media. I enjoy turning complex problems
-        into simple, beautiful and intuitive designs.
+        I&apos;m a dedicated and versatile Web Developer with over 2 years of
+        experience building modern, scalable web applications. I specialize in
+        full-stack development using technologies such as Node.js, Express.js,
+        React, Next.js, MongoDB, and Firebase, with a strong focus on writing
+        clean, maintainable code and delivering high-performance user
+        experiences.
       </p>
       <p className="my-5 text-[#47596e] font-semibold">
-        My aim is to bring across your message and identity in the most creative
-        way. I created web design for many famous brand companies.
+        On the frontend, I leverage React, Redux Toolkit, and RTK Query to
+        manage state and streamline data fetching. I use TypeScript to improve
+        code quality and reduce bugs, and design responsive UIs with Tailwind
+        CSS and Bootstrap. My backend skills include building RESTful APIs with
+        Node.js and Express, implementing authentication with Firebase, and
+        integrating databases like MongoDB for scalable data storage.
+      </p>
+      <p className="my-5 text-[#47596e] font-semibold">
+        I&apos;ve worked on a variety of real-world projects, including
+        e-commerce platforms, blog systems using CMS, and admin dashboards with
+        role-based access. My focus is always on building applications that are
+        not only functional but also user-friendly and production-ready.
+        I&apos;m continuously learning and exploring new technologies to stay
+        up-to-date with industry best practices and deliver high-quality web
+        solutions.
       </p>
 
       <h2 className="text-3xl font-bold mt-20">My Skills!</h2>

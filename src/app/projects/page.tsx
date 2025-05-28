@@ -6,34 +6,34 @@ import Link from "next/link";
 const projects = [
   {
     projectImage:
-      "https://res.cloudinary.com/dnfqhy8di/image/upload/v1747352649/one_nug6bu.jpg",
-    projectName: "Chul urina",
+      "https://res.cloudinary.com/dnfqhy8di/image/upload/v1748465776/Screenshot_2025-05-29_at_2.33.05_AM_j6yvfm.png",
+    projectName: "Blue Berry",
     description:
-      "component presents educational history using a responsive and styled layout in React with Tailwind CSS. It maps over an array of education objects containing year, degree, institution, and a background color. Each education card is styled with a light background, border, and padding for a clean visual appearance.",
-    projectLink: "https://www.google.com",
-    backgroundColor: "#FFF5F5",
-    category: "UI/UX",
+      "Developed a full-featured e-commerce platform with user and admin dashboards, enabling users to browse detailed product listings, manage their cart, place orders, and track order status, while admins can add, update, and delete products, manage user roles, and monitor orders—all with role-based access controls, responsive and modern UI/UX built using Tailwind CSS and Shadcn components, and seamless integration of RESTful APIs for authentication, product data, and order management.",
+    projectLink: "https://blue-berry-v2.vercel.app/",
+    backgroundColor: "#6c7fd821",
+    category: "E-Commerce",
   },
   {
     projectImage:
-      "https://res.cloudinary.com/dnfqhy8di/image/upload/v1747352352/blog5_bjbzxu.jpg",
-    projectName: "Aura Dione",
+      "https://res.cloudinary.com/dnfqhy8di/image/upload/v1748467167/Screenshot_2025-05-29_at_3.18.50_AM_jrzzdm.png",
+    projectName: "Maya",
     description:
-      "component presents educational history using a responsive and styled layout in React with Tailwind CSS. It maps over an array of education objects containing year, degree, institution, and a background color. Each education card is styled with a light background, border, and padding for a clean visual appearance.",
+      "Contributed extensively to the development of Maya, a professional-grade herbal e-commerce platform built for Square Group—one of Bangladesh's largest companies—by implementing responsive product listings with Swiper.js, crafting clean and modern UI using Tailwind CSS and Shadcn/UI, enabling efficient navigation through Next.js Pages Router with SSR, and collaborating on core components, page layouts, and key UI features for a production-ready, enterprise-scale application.",
 
-    projectLink: "https://www.google.com",
+    projectLink: "https://maya.com.bd",
     backgroundColor: "#FFF0FA",
-    category: "Web Design",
+    category: "Harbal E-Commerce",
   },
   {
     projectImage:
       "https://res.cloudinary.com/dnfqhy8di/image/upload/v1747352352/blog4_t9emdq.jpg",
-    projectName: "Chul urina",
+    projectName: "Vidinfra",
     description:
-      "component presents educational history using a responsive and styled layout in React with Tailwind CSS. It maps over an array of education objects containing year, degree, institution, and a background color. Each education card is styled with a light background, border, and padding for a clean visual appearance.",
-    projectLink: "https://www.google.com",
+      "Built using Payload CMS, Vidinfra is a dynamic blog platform with a fully customizable admin dashboard that allows administrators to create, update, or remove any content or page without code changes, featuring a rich text editor for writing blogs, automatic generation of a table of contents from headings, dynamic page management, and a modern UI built with Tailwind CSS and Shadcn/UI, all while leveraging SSR and ISR for optimized performance and seamless content delivery.",
+    projectLink: "https://github.com/Mahamudul-Hasan-Abir/Vidinfra",
     backgroundColor: "#E6FBFF",
-    category: "Logo",
+    category: "PayloadCMS-Blog Site",
   },
 ];
 

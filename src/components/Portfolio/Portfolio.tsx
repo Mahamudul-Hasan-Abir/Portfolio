@@ -21,11 +21,17 @@ const Portfolio = () => {
               width={500}
               height={500}
             ></Image> */}
-            <Image
+            {/* <Image
               src="https://res.cloudinary.com/dnfqhy8di/image/upload/v1747265040/your_folder_name/1747265036861-cv%204.jpg.jpg"
               alt="Mahamudul Hasan Abir photo"
               width={500}
               height={500}
+            ></Image> */}
+            <Image
+              src="https://res.cloudinary.com/dnfqhy8di/image/upload/v1754846743/Abir_hscgxs.png"
+              alt="Mahamudul Hasan Abir photo"
+              width={600}
+              height={600}
             ></Image>
           </div>
         </div>

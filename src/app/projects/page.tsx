@@ -16,6 +16,16 @@ const projects = [
   },
   {
     projectImage:
+      "https://res.cloudinary.com/dnfqhy8di/image/upload/v1754838424/Screenshot_2025-08-10_at_9.06.38_PM_ndmda5.png",
+    projectName: "CourierX",
+    description:
+      "CourierX is a modern courier and parcel delivery management platform built with Next.js, React, and TypeScript that serves three user roles: customers who create and track delivery orders, agents who manage assigned parcels and update delivery statuses, and administrators who oversee the entire system and assign agents. The application features Redux Toolkit with RTK Query for state management, Tailwind CSS with Radix UI for responsive design, JWT-based authentication with role-protected routes, and real-time parcel tracking capabilities. The frontend communicates with a RESTful backend API to handle parcel operations, user authentication, and administrative functions including PDF/CSV report generation and route optimization for delivery agents. Built with scalability and user experience in mind, CourierX provides a complete solution for courier service management from order creation to final delivery.",
+    projectLink: "https://courier-system-client.vercel.app",
+    backgroundColor: "#cf904499",
+    category: "Logistics & Supply Chain Management Software",
+  },
+  {
+    projectImage:
       "https://res.cloudinary.com/dnfqhy8di/image/upload/v1748467167/Screenshot_2025-05-29_at_3.18.50_AM_jrzzdm.png",
     projectName: "Maya",
     description:

@@ -7,6 +7,7 @@ import Container from "@/components/Container/Container";
 import Header from "@/components/Header/Header";
 import { Toaster } from "sonner";
 import ResponsivePortfolio from "@/ResponsivePortfolio/ResponsivePortfolio";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,6 +67,7 @@ export default function RootLayout({
                 </div>
               </div>
               <div>
+                <GoogleTagManager gtmId={"GTM-NSVDX2JQ"} />
                 {children}
                 <Toaster></Toaster>
               </div>

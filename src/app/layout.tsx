@@ -8,7 +8,11 @@ import Header from "@/components/Header/Header";
 import { Toaster } from "sonner";
 import ResponsivePortfolio from "@/ResponsivePortfolio/ResponsivePortfolio";
 import { GoogleTagManager } from "@next/third-parties/google";
+import dynamic from "next/dynamic";
 
+const FacebookPixel = dynamic(
+  () => import("@/components/Analytics/FacebookPixel/FacebookPixelHeader")
+);
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -51,11 +55,7 @@ export default function RootLayout({
         </div>
         <Container>
           <div className="grid grid-cols-12 lg:gap-10 mt-20">
-            {/* <div className="lg:col-span-4  col-span-12">
-              <Portfolio></Portfolio>
-            </div> */}
             <div className="lg:col-span-4 col-span-12 lg:sticky lg:top-20 h-fit">
-              {/* <Portfolio /> */}
               <ResponsivePortfolio></ResponsivePortfolio>
             </div>
 
@@ -68,6 +68,7 @@ export default function RootLayout({
               </div>
               <div>
                 <GoogleTagManager gtmId={"GTM-NSVDX2JQ"} />
+                <FacebookPixel />
                 {children}
                 <Toaster></Toaster>
               </div>

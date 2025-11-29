@@ -91,7 +91,8 @@ import { Toaster } from "sonner";
 import ResponsivePortfolio from "@/ResponsivePortfolio/ResponsivePortfolio";
 
 import FacebookPixelWrapper from "@/components/Analytics/FacebookPixel/FacebookPixelClientWrapper";
-import Script from "next/script";
+import ClarityClient from "@/components/Analytics/MicrosoftClarity/ClarityClient";
+import GoogleAnalyticsClient from "@/components/Analytics/GoogleAnalytics/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -116,21 +117,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-5E30MGPWYZ"
-        ></Script>
-        <Script id="google-analytics">
-          {`
-    window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5E30MGPWYZ');
-  `}
-        </Script>
-      </head>
       <body
         className={`relative ${geistSans.variable} ${geistMono.variable} antialiased 
          lg:bg-[url('/background-one.jpg')] 
@@ -164,6 +150,8 @@ export default function RootLayout({
               <div>
                 {/* <GoogleTagManager gtmId="GTM-NSVDX2JQ" /> */}
                 <FacebookPixelWrapper />
+                <ClarityClient />
+                <GoogleAnalyticsClient />
                 {children}
                 <Toaster />
               </div>
